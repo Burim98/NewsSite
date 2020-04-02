@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>JustNews</title>
 </head>
 <body>
-    <h1>Тут должен быть шаблон базовой Html главной страницы</h1>
+    <header>
+        <img src="images/logo.png" alt="logo" class="logo">
+        <div class="searchBox">
+            <input type="search" class="search">
+            <button class="searchButton"><img src="images/search.png" alt="search" class="searchImg"></button>
+        </div>
+        <div class="statisticBox">1 $ = 0.3 бел.руб.</div>
+        <div class="headerLine"></div>
+        <button class="profileButton"><img src="images/ava.png" alt="avatar" class="profileImg"></button>
+        <button class="loginButton">Войти</button>
+    </header>
+
+    <aside class="rubricBox">
+        <h2 class="rubricHeadline">РУБРИКИ</h2>
+        <p class="rubric">ПОЛИТИКА</p>
+        <p class="rubric">ТЕХНОЛОГИИ</p> 
+        <p class="rubric">НЕДВИЖИМОСТЬ</p> 
+        <p class="rubric">ЛЮДИ</p> 
+        <p class="rubric">ДОСУГ</p>         
+    </aside>
+
+    <div class="wrapper">       
+        <div class="slide1">
+            <h2 class="slide1Headline">SOME HEADLINE</h2>
+            <p class="slide1Pharagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis culpa enim maxime exercitationem quos facere, eum voluptatum dolor asperiores dicta accusantium quis a quibusdam quia numquam impedit labore nemo. Maxime.</p>
+        </div>       
+        <input type="radio" name="point" class="slideButton slideButton1Pos">
+        <input type="radio" name="point" class="slideButton slideButton2Pos">
+        <input type="radio" name="point" class="slideButton slideButton3Pos">         
+    </div>
+
+    <section class="rigthColumn">
+        <h2 class="rightColumnHeadline">САМОЕ КОММЕНТИРУЕМОЕ</h2>
+    </section>
+    
 </body>
 </html>
