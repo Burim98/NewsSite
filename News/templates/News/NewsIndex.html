@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>JustNews</title>
+</head>
+<body>
+    <h1>Новости</h1>
+    <div>
+        <a href="/">Главная</a>
+        {% for rubric in rubrics %}
+        <a href="/{{ rubric.pk }}/">{{ rubric.name }}</a>
+        {% endfor %}
+    </div>
+    {% for bb in bbs %}
+    <div>
+        <h2>{{ bb.title }}</h2>
+        <p>{{ bb.content }}</p>
+        <p><a href="/{{ bb.rubric.pk }}/">{{ bb.rubric.name }}</a></p>
+        <p>{{ bb.published|date:"d.m.Y H:i:s" }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
