@@ -5,7 +5,7 @@ from django.views.generic.edit import CreateView
 from .forms import ModelNewsForm
 
 def index(request):
-    return render(request, 'News/index.html')
+    return render(request, 'news/index.html')
 
 def new(request):
     bbs = ModelNews.objects.all()

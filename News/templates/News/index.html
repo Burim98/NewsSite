@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-    <title>JustNews</title>
-</head>
-<body>
+{% extends 'layout/basic.html' %}
+{% load static %}
+{% block content %}
     <header>
-        <img src="images/logo.png" alt="logo" class="logo">
+        <img src="{% static 'news/images/logo.png' %}" alt="logo" class="logo">
         <div class="searchBox">
             <input type="search" class="search">
-            <button class="searchButton"><img src="images/search.png" alt="search" class="searchImg"></button>
+            <button class="searchButton"><img src="{% static 'news/images/search.png' %}" alt="search" class="searchImg"></button>
         </div>
         <div class="statisticBox">1 $ = 0.3 бел.руб.</div>
         <div class="headerLine"></div>
-        <button class="profileButton"><img src="images/ava.png" alt="avatar" class="profileImg"></button>
+        <button class="profileButton"><img src="{% static 'news/images/ava.png' %}" alt="avatar" class="profileImg"></button>
         <button class="loginButton">Войти</button>
     </header>
 
@@ -45,5 +39,4 @@
         <h2 class="rightColumnHeadline">САМОЕ КОММЕНТИРУЕМОЕ</h2>
     </section>
     
-</body>
-</html>
+{% endblock %}
